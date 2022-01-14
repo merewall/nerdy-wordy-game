@@ -38,6 +38,7 @@ h1 {
   border: 0.25rem solid var(--bluegreen);
   border-radius: 5px;
   outline: 0.25rem solid var(--marigold);
+  outline-offset: -0.1rem;
   padding: 0.25rem;
   margin-top: 0.25rem;
 }
@@ -64,6 +65,7 @@ main {
   border-radius: 5px;
   border: 6px solid var(--light);
   outline: var(--darkgreen) 6px solid;
+  outline-offset: -0.1rem;
   background-color: var(--light);
   margin: 16px;
 }
@@ -77,6 +79,7 @@ main {
   border: 0.25rem solid var(--bluegreen);
   border-radius: 5px;
   outline: 0.25rem solid var(--marigold);
+  outline-offset: -0.1rem;
   padding: 0.25rem;
   margin: 0 0.25rem;
 }
@@ -91,6 +94,7 @@ main {
   border-radius: 5px;
   border: 6px solid var(--light);
   outline: var(--darkgreen) 6px solid;
+  outline-offset: -0.1rem;
   background-color: var(--light);
   margin: 16px;
 }
