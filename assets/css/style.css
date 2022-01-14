@@ -99,6 +99,16 @@ main {
   margin: 16px;
 }
 
+input {
+  border: none;
+  background-color: var(--light);
+  color: var(--light);
+}
+
+input:focus {
+  outline: none;
+}
+
 #scores-container {
   display: flex;
   align-items: flex-end;
