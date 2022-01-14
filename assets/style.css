@@ -1,0 +1,246 @@
+:root {
+  --darkgreen: rgb(71, 106, 111);
+  --marigold: #f0a202;
+  --bluegreen: #83c5be;
+  --light: #edf6f9;
+  --red: #e5625e;
+}
+
+body {
+  background-color: var(--bluegreen);
+}
+
+header {
+  background-color: var(--darkgreen);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  -webkit-text-stroke: 2px var(--marigold);
+  border-bottom: 0.75rem solid var(--marigold);
+  border-top: 0.75rem solid var(--marigold);
+  outline: 0.25rem solid var(--bluegreen);
+  padding: 0.75rem;
+}
+
+#start-btn {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  color: var(--darkgreen);
+  font-weight: bolder;
+  background-color: var(--light);
+  border: 0.25rem solid var(--bluegreen);
+  border-radius: 5px;
+  outline: 0.25rem solid var(--marigold);
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#top-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+#stats-container {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 6px solid var(--light);
+  outline: var(--darkgreen) 6px solid;
+  background-color: var(--light);
+  margin: 16px;
+}
+
+#reset-scores-btn {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  color: var(--darkgreen);
+  font-weight: bolder;
+  background-color: var(--light);
+  border: 0.25rem solid var(--bluegreen);
+  border-radius: 5px;
+  outline: 0.25rem solid var(--marigold);
+  padding: 0.25rem;
+  margin: 0 0.25rem;
+}
+
+#game-container {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 6px solid var(--light);
+  outline: var(--darkgreen) 6px solid;
+  background-color: var(--light);
+  margin: 16px;
+}
+
+#scores-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+#scores {
+  flex: 0 0 50%;
+  color: var(--darkgreen);
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-right: 0.5rem;
+}
+
+#scores div {
+  margin: 0.5rem 0;
+}
+
+#timer-container {
+  color: var(--darkgreen);
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 0.3rem solid var(--marigold);
+}
+
+#timer-container p {
+  padding: 0.5rem 0;
+}
+
+#word {
+  color: var(--darkgreen);
+  font-weight: bolder;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#message {
+  color: var(--red);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+#alphabet {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--darkgreen);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+footer {
+  height: 4rem;
+  background: var(--darkgreen);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: var(--bluegreen);
+  font-size: 0.85rem;
+  padding: 1rem;
+}
+
+/* -------------------- RESPONSIVENESS ------------------- */
+/* https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile */
+
+/* hi-res laptops and desktops */
+@media screen and (max-width: 1281px) {
+}
+
+@media screen and (min-width: 994px) {
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media screen and (max-width: 991px) {
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width: 801px) {
+  #timer-container {
+    font-size: 1rem;
+  }
+
+  #scores-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #word {
+    font-size: 1rem;
+  }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #alphabet {
+    font-size: 1.5rem;
+    margin: 1rem 1rem 0 1rem;
+  }
+
+  #top-section {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  #scores-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+  }
+
+  #alphabet {
+    font-size: 1rem;
+  }
+}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media screen and (max-width: 320px) {
+  #scores-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    letter-spacing: 0.5rem;
+  }
+}

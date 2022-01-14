@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <header>
+        <h1>HANGMAN</h1>
+        <button id="start-btn">START</button>
+    </header>
+    <main>
+        <div id="top-section">
+            
+            <div id="game-container">
+                <p id="word">Click 'Start' to begin a game!</p>
+                <p id="message"></p>
+            </div>
+            
+            
+            <div id="stats-container">
+                <div id="scores-container">
+                    <div id="scores">
+                        <div id="wins">
+                            <p>Wins: </p>
+                        </div>
+                        <div id="losses">
+                            <p>Losses: </p>
+                        </div>
+                    </div>
+                    <button id="reset-scores-btn">Reset Scores</button>
+                </div>
+                
+                <div id="timer-container">
+                    <p>Time Remaining:</p>
+                    <p id="timer">5 seconds</p>
+                </div>
+            </div>
+            
+        </div>
+        <div id="alphabet"></div>
+    </main>
+    <footer>
+        <p>&copy; nerdy wordy games</p>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
